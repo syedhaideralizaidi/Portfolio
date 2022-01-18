@@ -8,8 +8,8 @@
     <section class="hero">
         <div class="hero--content">
             <div class="hero--content--intro">
-                <img src="{% static 'images/haider.jpg'%}" id="profile">
-                <h1 class="intro-name">Syed Haider <br> Ali Zaidi</h1>
+                <img src="{% static 'images/haider.jpg'%}" id="profile_pic">
+                <h1 class="intro--name">Syed Haider Ali Zaidi</h1>
             </div>
                 <div class="hero--content--subheadline">
                     <h3 class="description">Python Developer</h3>
@@ -21,7 +21,7 @@
 
     <section class="container section--2">
         <h3>My Projects</h3>
-        <h5>Projects that makes my journey worth while</h5>
+        <h5>Projects that makes my journey worthwhile</h5>
         <div class="projects--wrapper">
             {% for project in projects %}
             <div class="project--column">
@@ -44,13 +44,14 @@
             <h3>More About Me</h3>
         <p>I'm interested in Machine learning, Artificial Intelligence, and Data Science. I also like to do problem-solving and take different challenges. I'm very curious about product development, and innovation networks.</p>
         <p>Moreover, I also believe in creating a strong community and helping people grow. I really want to encourage more people to come forward and play their part in technology.</p>
+        <p>You can usually find my very latest programming interests by following me on instagram account @zaidi.14. </p>
         </div>
 
     </section>
 
    <section class="section--1">
     <div class="skills--container">
-        <h3>More About Me</h3>
+        <h3>Skills</h3>
 
         {% for skill in detailedSkills %}
         <div class="skill--wrapper">
@@ -101,3 +102,16 @@
 </section>
 
 {% endblock content %}
+
+
+<section class="section--3">
+        <h3>Contact</h3>
+
+        <div class="contact--wrapper">
+
+            <img class="linkedin--logo" src="{{skill.logo.url}}">
+            <h5>LinkedIn</h5>
+            <img class="Github--logo" src="{{skill.logo.url}}">
+            <h5>Github</h5>
+            </div>
+</section>

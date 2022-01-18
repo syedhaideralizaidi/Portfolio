@@ -1,5 +1,7 @@
 body{
     background-color: #E5E5E5;
+    scroll-behavior: smooth;
+
 }
 
 .section--1{
@@ -40,6 +42,7 @@ body{
     border-radius: 50%;
 }
 
+
 .hero--content{
     width: 800px;
     margin: 0 auto;
@@ -56,15 +59,15 @@ body{
 }
 
 .intro--name{
-    font-size: 100px;
-    letter-spacing: .1em;
-    font-weight: 700;
-    line-height: .9em;
+    font-size: 40px;
+    letter-spacing: .05em;
+    font-weight: 1000;
+    line-height: .7em;
 
 }
 
 .description{
-    font-size: 65px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -125,6 +128,7 @@ body{
     width: 600px;
     margin: 0 auto;
     padding: 1em;
+
 }
 
 .skill--wrapper{
@@ -147,8 +151,11 @@ body{
     gap: 1em;
 }
 
+.about--wrapper{
+justify-content: center;
+}
 .skill--tag{
-    background-color: #1F2428;
+    background-color: #C4E7F2;
     width: fit-content;
     padding: 3px 20px;
     border-radius: 20px;
@@ -204,5 +211,12 @@ body{
     .skill--wrapper{
         flex-flow: column;
 
+
     }
+}
+
+.section--3{
+    background-color: #fff;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
